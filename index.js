@@ -12,6 +12,7 @@ function map(array, fcn) {
 function reduce(array, fcn, i = 0) {
   let new_value = i;
 
+  // reduce returns true when all values are true
   if (typeof fcn(true, true) == 'boolean') {
     new_value = true;
   }
